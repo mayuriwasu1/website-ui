@@ -1,5 +1,5 @@
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { ArrowDownRightIcon, ArrowUpRightIcon, Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuItem, MenuItems } from '@headlessui/react'
+import { ArrowDownRightIcon, ArrowUpRightIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 export default function TopBar() {
   return (

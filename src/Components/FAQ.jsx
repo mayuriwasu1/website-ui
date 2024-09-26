@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Disclosure } from "@headlessui/react";
 import {
   ChevronDownIcon,
   ChevronUpIcon,
-  MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
 
 const faqs = [

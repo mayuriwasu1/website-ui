@@ -38,10 +38,10 @@ export default function HeroSection() {
                 </div>
                 <div className="relative flex items-center mt-6 sm:mt-0 justify-center sm:justify-auto">
                   <div className="z-40 h-12 w-12 bg-gray-600 rounded-full -mr-4">
-                    <img src="/images/vinita.svg" />
+                    <img alt="" src="/images/vinita.svg" />
                   </div>
                   <div className="z-30 h-12 w-12 bg-gray-600 rounded-full">
-                    <img src="/images/milly.svg" />
+                    <img alt="" src="/images/milly.svg" />
                   </div>
                 </div>
                 <div className="text-center sm:text-auto">
