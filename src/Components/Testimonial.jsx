@@ -3,17 +3,17 @@ import { useState } from "react";
 const jobOpenings = [
   {
     id: 1,
-    role: "Full-time designer",
+    role: "Innovative",
     href: "#",
     description:
-      "Quos sunt ad dolore ullam qui. Enim et quisquam dicta molestias. Corrupti quo voluptatum eligendi autem labore.",
+      "Creation, ensuring your messages resonate worldwide. From concept to distribution, our platform serves as your strategic partner.",
     salary: "$75,000 USD",
     location: "San Francisco, CA",
     img: "https://images.unsplash.com/photo-1719937206158-cad5e6775044?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 2,
-    role: "Laravel developer",
+    role: "Reliable",
     href: "#",
     description:
       "Creation, ensuring your messages resonate worldwide. From concept to distribution, our platform serves as your strategic partner.",
@@ -23,10 +23,10 @@ const jobOpenings = [
   },
   {
     id: 3,
-    role: "React Native developer",
+    role: "Quality",
     href: "#",
     description:
-      "Veniam ipsam nisi quas architecto eos non voluptatem in nemo. Est occaecati nihil omnis delectus illum est.",
+      "Creation, ensuring your messages resonate worldwide. From concept to distribution, our platform serves as your strategic partner.",
     salary: "$105,000 USD",
     location: "San Francisco, CA",
     img: "https://images.unsplash.com/photo-1720743453691-268baa850b5e?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -40,9 +40,9 @@ export default function Testimonial() {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="bg-white mt-12 sm:mt-24">
+    <div className="bg-white mt-0 sm:mt-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="bg-white font-medium tracking-tight text-gray-900 sm:text-4xl">
+        <h2 className="bg-white font-medium text-gray-900 leading-56 text-2xl sm:text-5xl text-[#111010]">
           Our expertise and passion <br/> breath life into your narratives 
         </h2>
         <div className="block md:flex items-center gap-12">

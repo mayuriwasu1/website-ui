@@ -1,18 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Eveett", sans-serif;
+}
+/* Initial state of the section */
+.section {
+  opacity: 0;
+  transform: translateY(30px); /* Increased movement */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Slower transition */
+}
+/* to hide the number bar */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* Fade-in state */
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 :root {
   --totSlides: 8;
   --slideWidth: 200px; /* Fixed width of slides */
   --slideHeight: 100px; /* Fixed height of slides */
   --animationSpeed: calc(1s * var(--totSlides));
-
 }
-
 .slider {
   height: var(--slideHeight);
   width: 100%; /* Full width */
   overflow: hidden;
   position: relative;
   max-width: 1440px; /* Max width for larger screens */
-   /* Center the slider */
+  /* Center the slider */
   margin-top: 6rem;
 }
 
@@ -28,6 +61,8 @@
   height: var(--slideHeight);
   overflow: hidden;
   margin-left: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .slide img {
@@ -37,7 +72,6 @@
   padding: 0; /* Remove padding */
   object-fit: contain; /* Maintain aspect ratio */
 }
-
 
 @keyframes scroll {
   0% {
@@ -58,11 +92,10 @@
   --slideWidth: 200px; /* Fixed width of slides */
   --slideHeight: 100px; /* Fixed height of slides */
   --animationSpeed: calc(1s * var(--totSlides));
-
 }
 
 .slider {
-  height: var(--slideHeight);
+  /* height: var(--slideHeight); */
   width: 100%; /* Full width */
   overflow: hidden;
   position: relative;
@@ -92,12 +125,11 @@
   object-fit: contain; /* Maintain aspect ratio */
 }
 
-
 /* marquee div container */
 .marquee {
   font-size: 4.5rem; /* Default font size for web */
   color: #fff;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   height: 9rem;
   overflow: hidden;
   background-color: #000;
@@ -110,8 +142,8 @@
   display: flex;
   align-items: center;
   position: absolute;
-  top:50%;
-  bottom:50%;
+  top: 50%;
+  bottom: 50%;
   width: 100%; /* Updated width */
   animation: marquee 12s linear infinite;
 }
@@ -124,8 +156,12 @@
 
 /* keyframe for continuous loop */
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* Mobile-specific styling */
@@ -135,7 +171,6 @@
     height: 4rem;
   }
 }
-
 
 .item {
   cursor: pointer;
@@ -166,7 +201,7 @@
 }
 
 .itemNumber {
-  color: red;
+  color: #EF001C;
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
@@ -218,7 +253,7 @@
   border: none;
   cursor: pointer;
   border: 2px solid black;
-  border-radius: 40%;
+  border-radius: 80px;
   svg {
     font-weight: 800;
     color: rgb(0, 0, 0);
@@ -239,4 +274,27 @@
 
 .next {
   right: 1rem;
+}
+
+/* loader */
+.loader {
+  border: 2px solid #f3f3f3; /* Light grey */
+  border-top: 2px solid #ee011c; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

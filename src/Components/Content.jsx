@@ -16,11 +16,11 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 */
 export default function Contact() {
   return (
-    <div className="bg-gray-50">
-      <div className="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
+    <div className="bg-[#f1f2f6]">
+      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-28 lg:max-w-7xl lg:px-8">
         {/* Details section */}
         <section aria-labelledby="details-heading">
-          <div className="mt-16 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-24">
+          <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-36">
             <div>
               <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg text-4xl sm:text-6xl">
                 <h1>
@@ -32,8 +32,8 @@ export default function Contact() {
               <section className="py-4">
                 <div className="mx-auto max-w-7xl px-6 lg:px-2">
                   <div className="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                    <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-10 lg:border-l lg:pl-8">
-                      <figure className="mt-10 flex flex-auto flex-col justify-between">
+                    <div className="flex flex-col pb-10 sm:pb-16 lg:pb-0">
+                      <figure className="mt-10 flex flex-auto flex-col justify-between lg:pr-8 xl:pr-10 lg:border-l lg:pl-8">
                       <img
                             alt=""
                             src="/images/milly.svg"
@@ -53,8 +53,8 @@ export default function Contact() {
                         </figcaption>
                       </figure>
                     </div>
-                    <div className="flex flex-col border-t border-gray-900/10 pt-0 sm:pt-16 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 xl:pl-6">
-                      <figure className="mt-10 flex flex-auto flex-col justify-between">
+                    <div className="flex flex-col pt-0 sm:pt-16 lg:pt-0">
+                      <figure className="mt-10 flex flex-auto flex-col justify-between lg:border-l lg:border-t-0 lg:pl-8 xl:pl-6">
                       <img
                             alt=""
                             src="/images/vinita.svg"
@@ -80,49 +80,49 @@ export default function Contact() {
               </section>
             </div>
             <div>
-              <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg px-3 lg:px-8 mt-6">
-              <p className="mb-4 text-xl tracking-tight text-gray-900 sm:text-2xl">
+              <div className="aspect-h-2 aspect-w-3 w-full overflow-hidden rounded-lg px-3 lg:px-0 mt-6 max-w-[468px]">
+              <p className="mb-7 text-2xl tracking-tight text-gray-900 sm:text-2xl text-[#111010] text-semibold">
               Give us few details and we’ll get in touch
                 </p>
                 <form className="">
-                  <div className="space-y-6 sm:space-y-12">
+                  <div className="space-y-4 sm:space-y-10">
                     <div className="">
                       <input
                         type="text"
                         placeholder="Name*"
-                        className="w-full border-b border-gray-400 focus:outline-none focus:border-red-500 transition duration-300 bg-transparent pb-3"
+                        className="w-full text-gray-600 border-b border-gray-400 focus:outline-none focus:border-red-500 transition duration-300 bg-transparent pb-3"
                       />
                     </div>
                     <div>
                       <input
                         type="text"
                         placeholder="Company name"
-                        className="w-full border-b border-gray-400 focus:outline-none focus:border-red-500 transition duration-300 bg-transparent pb-3"
+                        className="w-full text-gray-600 border-b border-gray-400 focus:outline-none focus:border-red-500 transition duration-300 bg-transparent pb-3"
                       />
                     </div>
                     <div>
                       <input
-                        type="text"
+                        type="email"
                         placeholder="Email*"
-                        className="w-full border-b border-gray-400 focus:outline-none focus:border-red-500 transition duration-300 bg-transparent pb-3"
+                        className="w-full text-gray-600 border-b border-gray-400 focus:outline-none focus:border-red-500 transition duration-300 bg-transparent pb-3"
                       />
                     </div>
                     <div>
                       <input
-                        type="text"
+                        type="number"
                         placeholder="Phone no*"
-                        className="w-full border-b border-gray-400 focus:outline-none focus:border-red-500 transition duration-300 bg-transparent pb-3"
+                        className="w-full text-gray-600 border-b border-gray-400 focus:outline-none focus:border-red-500 transition duration-300 bg-transparent pb-3"
                       />
                     </div>
                     <div className="">
                       <input
                         type="text"
                         placeholder="Message*"
-                        className="w-full border-b border-gray-400 focus:outline-none focus:border-red-500 transition duration-300 bg-transparent pb-3"
+                        className="w-full text-gray-600 border-b border-gray-400 focus:outline-none focus:border-red-500 transition duration-300 bg-transparent pb-3"
                       />
                     </div>
                   </div>
-                  <a href="/" className="mt-6 flex justify-center gap-x-6 rounded-full bg-[#EE011C] px-3 py-2 sm:py-4 w-full hover:bg-red-500 curser-pointer">
+                  <a href="/" className="mt-7 flex justify-center gap-x-6 rounded-full bg-[#EE011C] px-3 py-2 sm:py-4 w-full hover:bg-red-500 curser-pointer">
                     <button
                       type="submit"
                       className="text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"

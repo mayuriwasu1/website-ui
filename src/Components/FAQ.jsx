@@ -59,20 +59,20 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <div className="bg-white py-12 sm:py-24 sm:py-36">
+    <div className="bg-white my-16 sm:my-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="bg-white rounded-xl">
             <div className="mx-auto max-w-7xl">
               <div className="lg:grid lg:grid-cols-12">
                 <div className="lg:col-span-5 pl-4 sm:pl-0">
-                  <h2 className="text-2xl sm:text-5xl text-semibold leading-10 tracking-tight text-gray-900">
+                  <h1 className="text-2xl sm:text-[52px] font-medium leading-10 tracking-tight text-gray-900">
                     Frequently asked
-                  </h2>
-                  <h2 className="text-2xl sm:text-5xl text-semibold leading-10 tracking-tight text-gray-900 mt-0 sm:mt-4">
+                  </h1>
+                  <h2 className="text-2xl sm:text-[52px] font-medium leading-10 tracking-tight text-gray-900 mt-0 sm:mt-4">
                     questions
                   </h2>
                 </div>
-                <div className="lg:col-span-7 lg:mt-0">
+                <div className="lg:col-span-7 mt-6 sm:mt-0">
                   <dl className="space-y-6 px-4 divide-y divide-gray-900/10">
                     {faqs.map((faq) => (
                       <Disclosure as="div" key={faq.question} className="">

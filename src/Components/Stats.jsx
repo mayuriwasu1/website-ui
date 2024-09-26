@@ -7,7 +7,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white mt-16 sm:mt-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center">
@@ -20,16 +20,16 @@ export default function Stats() {
               </div>
             </div>
           </div>
-          <dl className="mt-4 sm:mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="mt-3 sm:mt-7 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.id} className="flex flex-col p-8">
-                <dt className="text-lg font-semibold leading-6 text-gray-800 px-8 mt-4">
+                <dt className="text-lg font-medium leading-6 text-gray-800 px-8 mt-4">
                   {stat.name}
                 </dt>
-                <dd className={`${stat.id == 1 ? "": "border-l"} order-first text-6xl sm:text-8xl font-medium tracking-tight text-gray-900`}>
+                <h1 style={{ fontFamily: 'Eveett, sans-serif' }} className={`${stat.id == 1 ? "": "border-l"} order-first text-6xl sm:text-8xl font-medium tracking-tight text-gray-900`}>
                   {stat.value}
                   <span className="text-[#EE011C] ">+</span>
-                </dd>
+                </h1>
               </div>
             ))}
           </dl>

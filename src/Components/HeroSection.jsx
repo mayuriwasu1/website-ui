@@ -4,13 +4,13 @@ export default function HeroSection() {
   return (
     <>
       <div className="bg-white pt-18 sm:pt-12">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-8 sm:mt-0">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <div className="mt-2 flex flex-wrap gap-y-0 sm:gap-y-4 text-2xl sm:text-8xl font-medium tracking-tight text-gray-900 sm:text-6xl">
+            <div className="mt-2 flex flex-wrap gap-y-0 sm:gap-y-4 text-2xl lg:text-8xl font-medium tracking-tight text-gray-900">
               <h2>WE ARE A </h2>
               <div className="flex">
                 <div>GLOBAL</div>
-                <div className="text-[#EE011C] ml-3 sm:ml-6">PRODUCTION</div>
+                <div className="text-[#EE011C] mx-3 sm:mx-4">PRODUCTION</div>
               </div>
               <h2>AGENCY</h2>
             </div>
@@ -21,7 +21,7 @@ export default function HeroSection() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-[65%_35%] justify-around items-center">
             <div>
-              <p className="text-lg sm:text-2xl leading-8 text-black font-medium text-gray-800">
+              <p className="text-base sm:text-2xl leading-5 sm:leading-8 text-black font-regular sm:font-semibold text-[#111010]">
                 Designed with the specific needs of large B2B enterprises in
                 mind, <br /> our platform offers a comprehensive solution to
                 simplify.
@@ -45,8 +45,8 @@ export default function HeroSection() {
                   </div>
                 </div>
                 <div className="text-center sm:text-auto">
-                  <p className=" text-base font-medium">Marin / Ayesha</p>
-                  <p className="text-base text-gray-500">Global Services</p>
+                  <p className=" text-base font-medium text-[#111010]">Marin / Ayesha</p>
+                  <p className="text-base text-gray-600">Global Services</p>
                 </div>
               </div>
             </div>

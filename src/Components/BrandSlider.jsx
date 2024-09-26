@@ -4,8 +4,8 @@ export default function BrandS() {
     marginBottom: "0.5rem",
   };
   return (
-    <div className="mt-24">
-      <div class="slider mt-24">
+    <div className="mt-16 sm:mt-28">
+      <div class="slider">
         <div class="slides-track flex animate-scroll">
           <div class="slide">
             <img src="images/svg-1.svg" alt="" />
