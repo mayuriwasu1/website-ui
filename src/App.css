@@ -1,38 +1,242 @@
-.App {
-  text-align: center;
+:root {
+  --totSlides: 8;
+  --slideWidth: 200px; /* Fixed width of slides */
+  --slideHeight: 100px; /* Fixed height of slides */
+  --animationSpeed: calc(1s * var(--totSlides));
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slider {
+  height: var(--slideHeight);
+  width: 100%; /* Full width */
+  overflow: hidden;
+  position: relative;
+  max-width: 1440px; /* Max width for larger screens */
+   /* Center the slider */
+  margin-top: 6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slides-track {
   display: flex;
-  flex-direction: column;
+  width: calc(
+    var(--slideWidth) * var(--totSlides)
+  ); /* Total width of all slides */
+}
+
+.slide {
+  width: var(--slideWidth);
+  height: var(--slideHeight);
+  overflow: hidden;
+  margin-left: 40px;
+}
+
+.slide img {
+  width: 100%; /* Image takes full width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(var(--slideWidth) * -1)
+    ); /* One complete slide */
+  }
+}
+
+.animate-scroll {
+  animation: scroll var(--animationSpeed) linear infinite;
+}
+:root {
+  --totSlides: 8;
+  --slideWidth: 200px; /* Fixed width of slides */
+  --slideHeight: 100px; /* Fixed height of slides */
+  --animationSpeed: calc(1s * var(--totSlides));
+
+}
+
+.slider {
+  height: var(--slideHeight);
+  width: 100%; /* Full width */
+  overflow: hidden;
+  position: relative;
+  max-width: 1440px; /* Max width for larger screens */
+  margin: 0 auto; /* Center the slider */
+}
+
+.slides-track {
+  display: flex;
+  width: calc(
+    var(--slideWidth) * var(--totSlides)
+  ); /* Total width of all slides */
+}
+
+.slide {
+  width: var(--slideWidth);
+  height: var(--slideHeight);
+  overflow: hidden;
+  margin-left: 40px;
+}
+
+.slide img {
+  width: 100%; /* Image takes full width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+
+/* marquee div container */
+.marquee {
+  font-size: 4.5rem; /* Default font size for web */
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  height: 9rem;
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* nested div inside the container */
+.marquee div {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: absolute;
+  top:50%;
+  bottom:50%;
+  width: 100%; /* Updated width */
+  animation: marquee 12s linear infinite;
+}
+
+/* span with text */
+.marquee span {
+  display: inline-block;
+  padding-right: 1rem; /* Adjust this to control spacing */
+}
+
+/* keyframe for continuous loop */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+  .marquee {
+    font-size: 20px;
+    height: 4rem;
+  }
+}
+
+
+.item {
+  cursor: pointer;
+}
+.list {
+  border: 1px solid #11101026;
+  border-left: 0;
+  border-right: 0;
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.content.open {
+  max-height: 100px; /* Adjust based on your content */
+  opacity: 1;
+}
+.openList {
+  .item {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: -0.04em;
+  }
+}
+
+.itemNumber {
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.posterImage {
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for image opacity and scaling */
+}
+
+.image-slider-outer {
+  position: relative;
+  overflow: hidden; /* Hide overflow for smooth transitions */
+}
+.image-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth transition */
+  /* Translate based on current index */
+}
+.image-slide {
+  min-width: 100%; /* Each slide takes full width */
+  opacity: 0; /* Start with hidden slides */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+  display: grid;
+}
+@media (min-width: 768px) {
+  .image-slide {
+    grid-template-columns: 40% auto; /* 40% for image, auto for text */
+  }
+}
+
+.image-slide.active {
+  opacity: 1; /* Show the active slide */
+}
+
+/* Custom button styles */
+.prev,
+.next {
+  position: absolute;
+  height: 50px;
+  width: 66px;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  background-color: white;
   color: white;
+  border: none;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 40%;
+  svg {
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.prev:hover,
+.next:hover {
+  border: 0px solid black;
+  svg {
+    color: white;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.prev {
+  left: 1rem;
+}
+
+.next {
+  right: 1rem;
 }
