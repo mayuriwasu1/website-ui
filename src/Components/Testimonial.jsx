@@ -55,7 +55,7 @@ export default function Testimonial() {
                 jobOpenings?.[openIndex]?.img ||
                 "https://images.unsplash.com/photo-1719937206158-cad5e6775044?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               }
-              className="aspect-square sm:aspect-auto posterImage mt-16 aspect-[6/5]  bg-gray-50 object-cover lg:aspect-auto w-[484px] h-[451px] transition-opacity duration-500"
+              className="aspect-square sm:aspect-auto posterImage mt-16 aspect-[6/5]  bg-gray-50 object-cover lg:aspect-auto w-full h-[250px] sm:w-[484px] sm:h-[451px] transition-opacity duration-500"
             />
           </div>
           <div className="w-full lg:max-w-xl lg:flex-auto">
