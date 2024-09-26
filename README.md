@@ -1,7 +1,7 @@
 
 ### Brand Website
 ---
-## [Demo Link](https://master--pixelplus-mayuri.netlify.app/) ↗️
+## [Demo Link]([https://master--pixelplus-mayuri.netlify.app/](https://pixelplus-m.netlify.app/)) ↗️
 ---
 ## Tech Stack
 - `React`, `CSS3`, `JavaScript`
