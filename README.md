@@ -8,25 +8,25 @@
 ---
 
 
-<!-- - **Top Section**
-![Medicines page](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/medi_practo.png)
+- **Top Section**
+![Medicines page](https://github.com/screen-1.png)
 
 ---
 
 - **SLider**
 
-![Labtest](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/labtest_practo.png)
+![Labtest](https://github.com/screen-2.png)
 
 ---
 - **Testimonial**
 
-![Card Section](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/addcard.png)
+![Card Section](https://github.com/screen-3.png)
 
 ---
 
-- **Mobile View**
+<!-- - **Mobile View**
 
-![Contact Page](https://github.com/Vaman93/Practo-Clone/blob/main/readme_img/contact.png)
+![Contact Page](https://github.com/blob/main/readme_img/contact.png)
 
 --- -->
 
