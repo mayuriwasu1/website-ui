@@ -37,10 +37,10 @@ export default function HeroSection() {
                   <ArrowRightIcon className="h-6 w-6 text-white" />
                 </div>
                 <div className="relative flex items-center mt-6 sm:mt-0 justify-center sm:justify-auto">
-                  <div className="z-40 h-12 w-12 bg-gray-600 rounded-full -mr-4">
+                  <div className="z-40 h-12 w-12 bg-gray-100 rounded-full -mr-4">
                     <img alt="" src="/images/vinita.svg" />
                   </div>
-                  <div className="z-30 h-12 w-12 bg-gray-600 rounded-full">
+                  <div className="z-30 h-12 w-12 bg-gray-100 rounded-full">
                     <img alt="" src="/images/milly.svg" />
                   </div>
                 </div>

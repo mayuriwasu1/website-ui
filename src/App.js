@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import TopBar from "./Components/TopBar";
 import HeroSection from "./Components/HeroSection";
 import Footer from "./Components/Footer";
