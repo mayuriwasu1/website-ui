@@ -1,9 +1,9 @@
 ### Brand Website
 
-## [Demo Link](https://pixelplus-m.netlify.app/) ↗️
-
-## Tech Stack
+#### Tech Stack 
 - `React`, `SCSS`, `JavaScript`
+
+### [Demo Link](https://pixelplus-m.netlify.app/) ↗️
 ---
 
 - **Top Section**  
