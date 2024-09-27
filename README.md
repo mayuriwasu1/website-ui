@@ -3,7 +3,7 @@
 ## [Demo Link](https://pixelplus-m.netlify.app/) ↗️
 ---
 ## Tech Stack
-- `React`, `CSS3`, `JavaScript`
+- `React`, `SCSS`, `JavaScript`
 ---
 
 - **Top Section**  
